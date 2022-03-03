@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,700;1,400&display=swap');
+
+*, *::after ,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --red: #0081a7;
+    --green: #e0e1dd;
+    --blue: #4ea8de;
+}
+
+body{
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: var(--green);
+    line-height: 1.5;
+}
+
+header{
+    background-color: var(--red);
+    height: 110px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 5px;
+}
+
+header h1{
+    font-size: 3em;
+    letter-spacing: 4px;
+}
+
+#img-div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: .8em;
+    height: 80vh;
+    
+}
+#image{
+    display: block;
+    box-shadow: 15px 15px 10px black;
+    max-width: 70%;
+    height: auto;
+    margin: 20px auto;
+}
+
+span{
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+#tribute-info{
+   
+    padding-left: 20px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 18px;
+}
+#tribute-info h3, h5{
+    letter-spacing: 3px;
+    text-align: center;
+
+}
+p{
+    padding: 10px;
+    font-size: 1.1em;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    padding-bottom: 15px;
+}
+.links a{
+    text-decoration: none;
+    color: var(--green);
+}
+button{
+    background-color: var(--blue);
+    text-transform: uppercase;
+    padding: 10px;
+    box-shadow: 8px 8px 3px black;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+   
+}
+
+footer{
+    background-color: var(--red);
+    font-size: .8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+@media screen and (max-width: 800px){
+    header{
+        font-size: .8em;
+    }
+    #img-div{
+        height: 60vh;
+    }
+    #image{
+        max-width: auto;
+    }
+}
