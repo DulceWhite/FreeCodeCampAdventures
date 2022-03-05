@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Survey Form</title>
+</head>
+<body>
+    <div>
+        <h1 id="title"><span>Tommy's Laundry Service</span> Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve our services!</p>
+    </div>
+    
+    <form action="" id="survey-form">
+        <fieldset class="main-info">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" required placeholder="Your Name">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" required placeholder="Your Email">
+            <label id="number-label" for="numbre">Visits per week</label>
+            <input type="number" id="number" min="0" max="10" placeholder="Select one">
+            <label for="dropdown">Locations</label>
+            <select name="dropdown" id="dropdown">
+                <option  value="select one" hidden >Select a location</option>
+                <option  value="21st Street">21st Street</option>
+                <option  value="Center Street">Center Street</option>
+                <option  value="Golden Hill Street">Golden Hill Street</option>
+            </select> 
+        </fieldset>
+
+        <fieldset id="recommend">
+            <p>Would you recommend Tommy's Laundry Services to a friend?</p>
+            <label>
+                <input type="radio" value="Definetly" name="recommend" checked>
+                Definetly
+            </label>
+            <label>
+                <input type="radio" value="Maybe" name="recommend">
+                Maybe
+            </label>
+            <label>
+                <input type="radio" value="Not Sure" name="recommend">
+                Not Sure
+            </label>
+
+        </fieldset>
+
+        <fieldset class="dropdown-2">
+            <p>What is your prefered entretaining method while waiting for your laundry?</p>
+            <select name="dropdown-2" id="dropdown-2">
+               <option value="selectOne"hidden>Select one</option>
+               <option value="Listen to music">Listen to music</option>
+               <option value="Read">Read</option>
+               <option value="Watch News">Watch news</option>
+               <option value="Personal phone">Personal phone</option>
+            </select>
+
+
+        </fieldset>
+
+        <fieldset id="checkarea">
+            <p>What would you like see improved? (check all that apply)</p>
+            <label>
+                <input type="checkbox" value="Service Hours">
+                Service Hours
+            </label>
+            <label>
+                <input type="checkbox" value="Delivery time">
+                Delivery time
+            </label>
+            <label>
+                <input type="checkbox" value="Notifications">
+                Notifications
+            </label>
+            <label>
+                <input type="checkbox" value="Customer Service">
+                Customer Service
+            </label>
+            <label>
+                <input type="checkbox" value="Labeling">
+                Labeling
+            </label>
+            
+            <label>
+                <input type="checkbox" value="Delivery">
+                Delivery
+            </label>
+        </fieldset>
+
+        <section>
+           <p>Any comments or suggestions?</p>
+           <textarea cols="60" rows="10" placeholder="Write your suggestion here..."></textarea>
+        </section>
+
+        <div class="btn">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+
+     
+
+
+
+
+
+
+
+
+        
+    </form>
+    
+    <!-- Free Code Camp testing  -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
